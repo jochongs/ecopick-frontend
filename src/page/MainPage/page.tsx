@@ -1,14 +1,16 @@
+import BottomTab from "../../components/BottomTab";
+
 export default function MainPage() {
   return (
-    <div className="w-full max-w-[600px] bg-[#F4F9F4] mx-auto h-[100vh] flex flex-col items-center">
+    <div className="w-full max-w-[600px] bg-[#F4F9F4] mx-auto h-screen flex flex-col justify-start items-center">
       <header className="h-16.5 bg-white flex items-center w-full border-b-1 border-[#EBEBEB]">
         <img className="w-25 ml-5.5" src="/src/assets/logo.png" alt="" />
       </header>
-      <main className="flex flex-col px-4.5 w-full relative">
+      <main className="flex-1 overflow-y-auto flex flex-col px-4.5 w-full relative pb-4">
         <h1 className="font-semibold text-base mt-4.5">
           ㅇㅇㅇ님, 오늘도 친환경 하루를 시작해요!
         </h1>
-        <div className="bg-[#42A066] w-full h-51.5 rounded-[10px] mt-7.5 relative">
+        <div className="bg-[#42A066] w-full h-51.5 rounded-[10px] mt-7.5 relative shrink-0">
           <h2 className="text-base font-semibold text-white mt-3.5 ml-4">
             나의 친환경 등급
           </h2>
@@ -40,7 +42,7 @@ export default function MainPage() {
             </div>
           </div>
         </div>
-        <div className="bg-[#FFC55B] w-full h-31 rounded-[10px] mt-3 relative">
+        <div className="bg-[#FFC55B] w-full h-31 rounded-[10px] mt-3 relative shrink-0">
           <h2 className="text-base font-bold text-[20px] mt-3 ml-5 leading-6">
             나의 리워드
           </h2>
@@ -67,7 +69,7 @@ export default function MainPage() {
             </div>
           </div>
         </div>
-        <div className="rounded-[10px] w-full h-41 border-1 border-solid border-[#DFDFDF] bg-white mt-3 relative">
+        <div className="rounded-[10px] w-full h-41 border-1 border-solid border-[#DFDFDF] bg-white mt-3 relative shrink-0">
           <h2 className="mt-4 ml-5 text-base font-bold text-[20px] leading-6">
             최근 실천 결과
           </h2>
@@ -99,6 +101,9 @@ export default function MainPage() {
           </div>
         </div>
       </main>
+      <footer className="w-full">
+        <BottomTab />
+      </footer>
     </div>
   );
 }
