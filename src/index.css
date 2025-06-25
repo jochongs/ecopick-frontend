@@ -3,3 +3,7 @@
 button {
   cursor: pointer;
 }
+
+html {
+  line-height: 1.2; /* 120% = 1.2 */
+}

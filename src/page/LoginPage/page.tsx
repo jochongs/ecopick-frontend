@@ -4,8 +4,8 @@ export default function LoginPage() {
   const navigate = useNavigate();
 
   const kakaoLoginBtnClick = () => {
-    navigate('/main');
-  }
+    navigate("/main");
+  };
 
   return (
     <div className="w-full max-w-[600px] mx-auto bg-[#F4F9F4] h-[100vh] flex flex-col items-center">
@@ -22,7 +22,10 @@ export default function LoginPage() {
         <img className="" src="/src/assets/login-info.png" alt="" />
       </div>
       <div>
-        <button onClick={kakaoLoginBtnClick} className="rounded-[10px] bg-[#FEE500] w-69.5 h-18 flex items-center justify-center mt-20">
+        <button
+          onClick={kakaoLoginBtnClick}
+          className="rounded-[10px] bg-[#FEE500] w-69.5 h-18 flex items-center justify-center mt-20"
+        >
           <img className="w-11" src="/src/assets/kakao-login.png" alt="" />
           <span className="text-3xl ml-2.5">카카오로그인</span>
         </button>
