@@ -68,7 +68,7 @@ export default function MainPage() {
         </div>
       </div> */}
       <div ref={checkRef} style={{ display: "none" }} />
-      {fallback ? "저전력" : "저전력x"}
+      {/* {fallback ? "저전력" : "저전력x"} */}
       <main className="flex-1 overflow-y-auto flex flex-col px-4.5 w-full relative pb-4">
         <h1 className="font-semibold text-base mt-4.5">
           ㅇㅇㅇ님, 오늘도 친환경 하루를 시작해요!
