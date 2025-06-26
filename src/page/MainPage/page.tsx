@@ -45,30 +45,7 @@ export default function MainPage() {
       <header className="h-16.5 bg-white flex items-center w-full border-b-1 border-[#EBEBEB]">
         <img className="w-25 ml-5.5" src="/src/assets/logo.png" alt="" />
       </header>
-      {/* <div style={{ display: "none" }}>
-        <div className="w-full h-full relative">
-          {!fallback ? (
-            <video
-              key="main-video"
-              ref={videoRef}
-              src="/src/assets/video.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-full h-full object-cover"
-            />
-          ) : (
-            <img
-              src="/assets/videos/particles_fallback.jpg"
-              alt="fallback"
-              className="w-full h-full object-cover"
-            />
-          )}
-        </div>
-      </div> */}
       <div ref={checkRef} style={{ display: "none" }} />
-      {/* {fallback ? "저전력" : "저전력x"} */}
       <main className="flex-1 overflow-y-auto flex flex-col px-4.5 w-full relative pb-4">
         <h1 className="font-semibold text-base mt-4.5">
           ㅇㅇㅇ님, 오늘도 친환경 하루를 시작해요!
