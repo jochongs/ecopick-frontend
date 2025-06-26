@@ -7,9 +7,7 @@ export default function MyPage() {
         <h1 className="text-[20px]">마이페이지</h1>
       </header>
       <main className="flex-1 overflow-y-auto flex flex-col px-4.5 w-full relative pb-4">
-        {/* <h2 className="text-[20px] font-bold mt-5.5 ml-5">
-          지역 내 친환경 가게
-        </h2> */}
+        <div className="h-24"></div>
       </main>
       <footer className="w-full">
         <BottomTab />
