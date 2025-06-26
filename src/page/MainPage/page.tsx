@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import BottomTab from "../../components/BottomTab";
+import useGetUserInfo from "./hooks/useGetUserInfo";
 
 export default function MainPage() {
   const [fallback, setFallback] = useState(false);
@@ -39,6 +40,8 @@ export default function MainPage() {
 
     return () => clearInterval(interval);
   }, []);
+
+  const { data: user } = useGetUserInfo();
 
   return (
     <div className="w-full max-w-[600px] bg-[#F4F9F4] mx-auto h-screen flex flex-col justify-start items-center">
